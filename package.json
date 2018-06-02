@@ -1,0 +1,35 @@
+{
+  "name": "aws-sinon-mock",
+  "version": "0.1.0",
+  "description": "Wrapper around aws-sdk-mock that uses sinon stubs.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christophgysin/aws-sinon-mock.git"
+  },
+  "author": {
+    "name": "Christoph Gysin",
+    "email": "christoph.gysin@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christophgysin/aws-sinon-mock/issues"
+  },
+  "homepage": "https://github.com/christophgysin/aws-sinon-mock#readme",
+  "dependencies": {
+    "aws-sdk-mock": "^2.0.0",
+    "bunyan-wrapper": "^1.0.0",
+    "sinon": "^5.0.10"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.8.2"
+  }
+}
