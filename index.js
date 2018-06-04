@@ -20,8 +20,8 @@ const AWS_SERVICES = {
 
 class AWSMock {
   constructor(config) {
-    this.config = config;
-    this.services = config.services || Object.keys(AWS_SERVICES);
+    this.config = config || {};
+    this.services = this.config.services || Object.keys(AWS_SERVICES);
     this.init();
   }
 
