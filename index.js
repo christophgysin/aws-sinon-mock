@@ -16,6 +16,28 @@ const AWS_SERVICES = {
     'scan',
     'update',
   ],
+  SQS: [
+    'addPermission',
+    'changeMessageVisibility',
+    'changeMessageVisibilityBatch',
+    'createQueue',
+    'deleteMessage',
+    'deleteMessageBatch',
+    'deleteQueue',
+    'getQueueAttributes',
+    'getQueueUrl',
+    'listDeadLetterSourceQueues',
+    'listQueues',
+    'listQueueTags',
+    'purgeQueue',
+    'receiveMessage',
+    'removePermission',
+    'sendMessage',
+    'sendMessageBatch',
+    'setQueueAttributes',
+    'tagQueue',
+    'untagQueue',
+  ],
 };
 
 class AWSMock {
