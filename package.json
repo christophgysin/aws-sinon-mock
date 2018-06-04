@@ -1,6 +1,6 @@
 {
   "name": "aws-sinon-mock",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Wrapper around aws-sdk-mock that uses sinon stubs.",
   "main": "index.js",
   "scripts": {
