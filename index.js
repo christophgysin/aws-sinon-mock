@@ -76,6 +76,9 @@ class AWSMock {
   constructor(config) {
     this.config = config || {};
     this.services = this.config.services || Object.keys(AWS_SERVICES);
+    if (this.config.AWS) {
+      AWS.setSDKInstance(this.config.AWS);
+    }
     this.init();
   }
 
