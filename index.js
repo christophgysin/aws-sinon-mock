@@ -98,11 +98,15 @@ class AWSMock {
     const stub = sinon.stub();
 
     // default implementaion returns an error
-    stub.callsFake((params, cb) => {
-      const message = `${prop}: Stub not implemented`;
-      log.warn(message);
-      cb(new Error(message));
-    });
+    const message = `${prop}: Stub not implemented`;
+    if (this.config.promise) {
+      stub.rejects(new Error(message));
+    } else {
+      stub.callsFake((params, cb) => {
+        log.warn(message);
+        cb(new Error(message));
+      });
+    }
 
     AWS.mock(service, method, (params, cb) => {
       log.trace('%s(%j)', prop, params);
